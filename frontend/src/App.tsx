@@ -1,10 +1,11 @@
 import React from 'react';
-import './App.scss';
+import styles from './App.module.scss';
+import { Routes } from './routes/Routes';
 
 export const App = () => {
     return (
-        <div id="App">
-            <h1>Hello World</h1>
+        <div className={styles.wrapper}>
+            <Routes/>
         </div>
     )
 }
