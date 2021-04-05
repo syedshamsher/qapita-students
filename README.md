@@ -1,1 +1,1 @@
-# qapita-students
+# qapita-students-application
