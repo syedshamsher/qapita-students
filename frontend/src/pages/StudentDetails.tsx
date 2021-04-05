@@ -1,8 +1,8 @@
 import React from 'react'
-import { Header } from './StudentDetails/Components/Header'
-import { NavigateButtons } from './StudentDetails/Components/NavigateButtons'
-import { Details } from './StudentDetails/Components/Details';
-import {Avatar} from './StudentDetails/Components/Avatar';
+import { Header } from '../components/Header'
+import { NavigateButtons } from '../components/NavigateButtons'
+import { Details } from '../components/Details';
+import {Avatar} from '../components/Avatar';
 import styles from './StudentDetails.module.scss'
 export const StudentDetails = () => {
     return (

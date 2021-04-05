@@ -6,6 +6,9 @@ module.exports = {
   resolve: {
     extensions: ['.tsx', '.ts', '.js', 'jsx'],
   },
+  devServer: {
+    port: 3000,
+  },
   module: {
     rules: [
       {
@@ -20,6 +23,10 @@ module.exports = {
       {
         test: /\.scss$/,
         use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
