@@ -1,15 +1,15 @@
-
-import React from 'react';
-import { Switch, Route } from 'react-router-dom';
-import { LandingPage } from '../pages/landingPage/LandingPage';
-import { StudentDetails } from '../pages/StudentDetails';
+import React from 'react'
+import { Route, Switch } from 'react-router'
+import { LandingPage } from '../pages/landingPage/LandingPage'
+import { StudentDetails } from '../pages/StudentDetails/StudentDetails'
 
 export const Routes = () => {
     return (
         <div>
             <Switch>
-                <Route path="/" exact render={ () => <LandingPage/> } />
-                <Route path="/details" exact render={ () => <StudentDetails/> }/>
+
+            <Route path="/" exact render={()=> <LandingPage/>} />
+            <Route path="/details" exact render={()=> <StudentDetails/>}/>
             </Switch>
         </div>
     )
