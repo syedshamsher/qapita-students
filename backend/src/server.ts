@@ -7,7 +7,7 @@ const app = express();
 
 const studentRoute = require("./Routes/Student")
 
-dotenv.config({ path: `/home/dinesh/Desktop/Qapita/qapita-students/backend/src/.env` });
+dotenv.config({ path: `/home/anusha/qapita-students/backend/src/.env` });
 app.use(express.json());
 
 app.use(cors());
