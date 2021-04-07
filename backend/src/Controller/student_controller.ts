@@ -27,7 +27,26 @@ Student.findByIdAndDelete({ _id: req.params.id })
     .catch((err:any) => res.status(400).json("Error:" + err));
 
 	
+ }
+
+const findStudent = ( req:any, res:any ) => {
+const {id} = req.params;
+console.log(id, "student id" )
+   Student.findById(id)   
+     .then( (student:any) => res.json(student) )
+     .catch( ( err:any ) => res.status(400).json(`error:${err}` ) )  
 }
+
+
+    
+
+
+
+
+
+
+
+
 
 const editStudent=(req:any,res:any)=>{
 	Student.updateOne(
@@ -71,5 +90,6 @@ addStudent,
 deleteStudent,
 editStudent,
 searchStudentByName,
-login
+login,
+findStudent
 }
