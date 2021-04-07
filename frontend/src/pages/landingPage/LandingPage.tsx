@@ -1,10 +1,16 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import styles from './LandingPage.module.scss';
 import 'antd/dist/antd.css';
 import { Row, Col } from 'antd';
 
 export const LandingPage : React.FC = () => {
+    const history = useHistory()
+
+    const openApplication = () : void => {
+        history.push('./dashboard')
+    }
+
     return (
         <div className={styles.wrapper}>
             <div className={styles.navbarStyle}>
@@ -13,14 +19,14 @@ export const LandingPage : React.FC = () => {
                     <div className={styles.appName}>QapProfile</div>
                 </Link>
 
-                <div>
+                <div className={styles.navButtonWrapper}>
                     <Link className={styles.navIcon} to="/details">
-                        <NavLink className={styles.navLogin} to="/details">Login</NavLink>
+                        <div className={styles.navLogin} >Login</div>
                     </Link>
                     <Link className={styles.navIcon} to="/auth/register">
-                        <NavLink className={styles.navRegister} to="/auth/register" >
+                        <div className={styles.navRegister}  >
                             Register
-                        </NavLink>
+                        </div>
                     </Link>
                 </div>
                 </div>
@@ -32,8 +38,8 @@ export const LandingPage : React.FC = () => {
                         <h1>Keep track of Every Student Profile</h1>
                         <p>QapProfile app to keep track of the students data in a much easy fashion.</p>
                         <div>
-                            <button>
-                                Register
+                            <button onClick={ () => openApplication()}>
+                                Open Web Application
                             </button>
                             <p>Available in all latest browsers</p>
                         </div>

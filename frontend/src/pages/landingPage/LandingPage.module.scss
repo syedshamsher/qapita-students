@@ -28,24 +28,26 @@ html , body {
     color: #f2f2f2;
 }
 
+.navButtonWrapper {
+    display: flex;
+}
+
 .navRegister {
     background: #6342A3;
-    text-decoration: none;
     color: #f2f2f2;
     margin-left: 10px;
     font-size: 1.2rem;
-    padding: 10px 20px;
+    padding: 7px;
     font-weight: 600;
     outline: none;
     border: none;
 }
 
 .navLogin {
-    text-decoration: none;
     color: #6342A3;
     margin-left: 10px;
     font-size: 1.2rem;
-    padding: 10px 20px;
+    padding: 7px;
     font-weight: 600;
     outline: none;
     border: none;
@@ -98,7 +100,11 @@ html , body {
 .footer {
     display: flex;
     justify-content: center;
-    margin-top: 130px  !important
+    align-items: center;
+    margin-top: 130px  !important;
+    background-color: #6342A3;
+    height: 109px;
+    color: #f2f2f2
 }
 
 
