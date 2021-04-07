@@ -5,15 +5,16 @@ import { RootStore } from "../../redux/Store";
 import { DoubleLeftOutlined } from "@ant-design/icons";
 import "antd/dist/antd.css"
 import { getAllStudentsData } from "../../redux/actions/AllStudentsActions";
+import { useHistory } from "react-router";
 
 export const Table = () => {
   const dispatch = useDispatch();
+  const history = useHistory()
   const { allStudents, loading } = useSelector((state: RootStore) => state.allStudents);
   
   useEffect(() => {
     loading && dispatch(getAllStudentsData())
   },[]);
-
 
   return (
     <div className="col-md-9 order-2">
@@ -39,7 +40,7 @@ export const Table = () => {
                 <td>{student.age}</td>
                 <td>{student.email}</td>
                 <td>
-                  <a className="btn btn-secondary">
+                  <a className="btn btn-secondary" onClick={() => history.push(`/edit/${student._id}`,student._id)}>
                     <DoubleLeftOutlined /> Details
                   </a>
                 </td>

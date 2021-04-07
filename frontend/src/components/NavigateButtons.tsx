@@ -5,7 +5,7 @@ import styles from './Header.module.scss'
 import 'antd/dist/antd.css';
 import { useHistory } from 'react-router';
 
-export const NavigateButtons = ({editBtnContent}:{editBtnContent:string}) => {
+export const NavigateButtons = ({editBtnContent}:{editBtnContent:string},handleEditStudent :any) => {
     const history = useHistory();
 
     const backToDashboard = () =>{
@@ -20,7 +20,7 @@ export const NavigateButtons = ({editBtnContent}:{editBtnContent:string}) => {
                 </Col>
                <Col xs={24} sm={24} md={24} lg={24} xl={5}>
                 
-                    <Button block className={styles.editAccountBtn} icon={<EditFilled />}>{editBtnContent}</Button>
+                    <Button block className={styles.editAccountBtn} icon={<EditFilled />} onClick={handleEditStudent}>{editBtnContent}</Button>
                 </Col>
                <Col xs={24} sm={24} md={24} lg={24} xl={5}>
                     <Button block className={styles.deleteAccountBtn} icon={<DeleteFilled />} danger>Delete Account</Button>
