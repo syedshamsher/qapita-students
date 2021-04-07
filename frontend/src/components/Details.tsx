@@ -1,3 +1,4 @@
+import { Row } from 'antd'
 import React from 'react'
 import styles from './Header.module.scss'
 export const Details = () => {
@@ -15,6 +16,7 @@ export const Details = () => {
         city: 'Unjha'
     }
     return (
+    
         <div className={styles.details}>
              <div>
                  <h4>Student Name  :</h4>
