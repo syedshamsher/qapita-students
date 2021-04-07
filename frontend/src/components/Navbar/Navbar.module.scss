@@ -1,0 +1,44 @@
+
+html , body {
+    margin: 0px
+}
+
+.navbarWrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #6334A3;
+    height: 30px
+}
+
+.dashboardLInk, .collegeLInk, .userLink {
+    text-decoration: none;
+    color: #FBFBFB;
+    cursor: pointer;
+}
+
+.navbarDashboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbarUser {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbarLogout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logout {
+    color: #FBFBFB
+}
+
+.margin {
+    margin: 10px;
+}
