@@ -1,9 +1,9 @@
-
-import React from 'react';
-import { Switch, Route } from 'react-router-dom';
-import { Dashboard } from '../pages/dashboard/Dashboard';
-import { LandingPage } from '../pages/landingPage/LandingPage';
-import { StudentDetails } from '../pages/StudentDetails/StudentDetails';
+import React from 'react'
+import { Route, Switch } from 'react-router'
+import { Dashboard } from '../pages/dashboard/Dashboard'
+import { EditPage } from '../pages/EditPage/EditPage'
+import { LandingPage } from '../pages/landingPage/LandingPage'
+import { StudentDetails } from '../pages/StudentDetails/StudentDetails'
 
 export const Routes = () => {
     return (
@@ -12,6 +12,7 @@ export const Routes = () => {
             <Switch>
                 <Route path="/dashboard" exact render={ () => <Dashboard/> } />
                 <Route path="/details" exact render={ () => <StudentDetails/> }/>
+                <Route path="/edit/:id" exact render={()=><EditPage/>}/>
             </Switch>
         </div>
     )

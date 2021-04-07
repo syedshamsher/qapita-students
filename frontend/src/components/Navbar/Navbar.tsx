@@ -9,9 +9,9 @@ import { getAllStudentsData } from "../../redux/actions/AllStudentsActions";
 
 export const Navbar = () => {
   const [isModalVisible, setIsModalVisible] = useState<boolean>(false);
-  const [name, setName] = React.useState("");
-  const [age, setAge] = React.useState("");
-  const [email, setEmail] = React.useState("");
+  const [name, setName] = React.useState<string>("");
+  const [age, setAge] = React.useState<(number | string)>("");
+  const [email, setEmail] = React.useState<string>("");
 
   const dispatch = useDispatch();
 

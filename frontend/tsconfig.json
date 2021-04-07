@@ -19,9 +19,5 @@
     // "allowJs": true /* Allow javascript files to be compiled. Useful when migrating JS to TS */,
     // "checkJs": true /* Report errors in .js files. Works in tandem with allowJs. */,
     },
-<<<<<<< HEAD
-    "include": ["src/**/*"]
-=======
     "include": ["./src/**/*"]
->>>>>>> 40794c0d04c2984f84feb9f93dd2e9f079d254c1
 }

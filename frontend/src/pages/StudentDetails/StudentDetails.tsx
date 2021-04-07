@@ -10,8 +10,8 @@ import 'antd/dist/antd.css';
 export const StudentDetails: React.FC = () => {
     return (
         <div>
-            <Header/>
-            <NavigateButtons/>
+            <Header headerTitle={'Student Details'}/>
+            <NavigateButtons editBtnContent={'Edit Account'}/>
            <Row className={styles.container}>
                 <Col xs={24} sm={24} md={24} lg={24} xl={18} className={styles.details}>
                     <Details/>
